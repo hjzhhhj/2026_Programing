@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Counter</p>
+    <p>0</p>
+    <button>+ 1 버튼</button>
+    <script>
+      const button = document.querySelector("button");
+      const p = document.querySelectorAll("p")[1];
+      let count = 0;
+      button.addEventListener("click", () => {
+        count += 1;
+        p.textContent = count;
+      });
+    </script>
+  </body>
+</html>
